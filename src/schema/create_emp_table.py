@@ -11,6 +11,7 @@ class Employee(Base):
     name = Column(String, nullable=False)
     age = Column(Integer, nullable=False)
     designation = Column(String, nullable=False)
-    mail = Column(String, unique=True, index=True, nullable=False)
+    email = Column(String, unique=True, index=True, nullable=False)
     address = Column(String, nullable=True)
+    phone = Column(String, nullable=False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
