@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from src.models.create_employee import CreateEmployee
 from src.service.create_employee import create_employee_service
-from src.service.get_all_employees import get_all_employees_service
+from src.service.get_employees_service import get_all_employees_service
 from src.db.database import get_db
 
 router = APIRouter(tags=["Employees"])  
